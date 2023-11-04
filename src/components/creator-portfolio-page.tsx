@@ -7,217 +7,219 @@ import Link from "next/link";
 
 export function CreatorPortfolioPage() {
   return (
-    <main key="1" className="flex pt-10 bg-gray-50">
-      <aside className="max-w-[300px] w-full px-6 py-4 dark:bg-gray-800">
-        <Image
-          alt="User profile"
-          className="rounded-full mb-4"
-          height="100"
-          src="/placeholder.svg"
-          style={{
-            aspectRatio: "100/100",
-            objectFit: "cover",
-          }}
-          width="100"
-        />
+    <main key="1" className="bg-gray-50">
+      <div className="pt-10 container mx-auto flex">
+        <aside className="max-w-[300px] w-full px-6 py-4 dark:bg-gray-800">
+          <Image
+            alt="User profile"
+            className="rounded-full mb-4"
+            height="100"
+            src="/placeholder.svg"
+            style={{
+              aspectRatio: "100/100",
+              objectFit: "cover",
+            }}
+            width="100"
+          />
 
-        <h3 className="font-semibold">John Doe</h3>
+          <h3 className="font-semibold">John Doe</h3>
 
-        <p className="text-sm text-gray-500">
-          Instagram Creator & Lifestyle Blogger
-        </p>
+          <p className="text-sm text-gray-500">
+            Instagram Creator & Lifestyle Blogger
+          </p>
 
-        <h2 className="mt-8 text-lg font-bold text-black dark:text-white">
-          Biography
-        </h2>
-        <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-          eros in lorem vehicula, eget feugiat libero interdum.
-        </p>
-        <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
-          Skills
-        </h3>
-        <ul className="mt-2 flex flex-wrap gap-2">
-          <li className="px-2 py-1 text-xs text-green-800 bg-green-200 rounded">
-            UI/UX Design
-          </li>
-          <li className="px-2 py-1 text-xs text-green-800 bg-green-200 rounded">
-            Graphic Design
-          </li>
-          <li className="px-2 py-1 text-xs text-green-800 bg-green-200 rounded">
-            Web Development
-          </li>
-        </ul>
-        <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
-          Social Links
-        </h3>
-        <ul className="mt-2 flex flex-col space-y-4">
-          <li className="text-gray-800 dark:text-gray-400">Twitter</li>
-          <li className="text-gray-800 dark:text-gray-400">LinkedIn</li>
-          <li className="text-gray-800 dark:text-gray-400">GitHub</li>
-        </ul>
-        <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
-          Location
-        </h3>
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-          United States
-        </p>
-      </aside>
-      <section className="flex-1 px-6 py-4 dark:bg-gray-800">
-        <ul className="flex border-b border-gray-200 dark:border-gray-700">
-          <li className="mr-1">
-            <Link
-              href="#"
-              className="inline-block px-4 py-2 text-sm font-semibold text-green-500 border-b-2 border-green-500"
-            >
-              Work
-            </Link>
-          </li>
-          <li className="mr-1">
-            <Link
-              href="#"
-              className="inline-block px-4 py-2 text-sm font-semibold text-gray-500 hover:text-green-500"
-            >
-              Services
-            </Link>
-          </li>
-          <li className="mr-1">
-            <Link
-              href="#"
-              className="inline-block px-4 py-2 text-sm font-semibold text-gray-500 hover:text-green-500"
-            >
-              Moodboards
-            </Link>
-          </li>
-          <li className="mr-1">
-            <Link
-              href="#"
-              className="inline-block px-4 py-2 text-sm font-semibold text-gray-500 hover:text-green-500"
-            >
-              Collaborations
-            </Link>
-          </li>
-        </ul>
-        <div className="grid grid-cols-3 gap-4 mt-6">
-          <div className="rounded overflow-hidden">
-            <Image
-              alt="Project 1"
-              className="w-full h-full"
-              height="200"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              width="200"
-            />
+          <h2 className="mt-8 text-lg font-bold text-black dark:text-white">
+            Biography
+          </h2>
+          <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+            eros in lorem vehicula, eget feugiat libero interdum.
+          </p>
+          <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+            Skills
+          </h3>
+          <ul className="mt-2 flex flex-wrap gap-2">
+            <li className="px-2 py-1 text-xs text-green-800 bg-green-200 rounded">
+              UI/UX Design
+            </li>
+            <li className="px-2 py-1 text-xs text-green-800 bg-green-200 rounded">
+              Graphic Design
+            </li>
+            <li className="px-2 py-1 text-xs text-green-800 bg-green-200 rounded">
+              Web Development
+            </li>
+          </ul>
+          <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+            Social Links
+          </h3>
+          <ul className="mt-2 flex flex-col space-y-4">
+            <li className="text-gray-800 dark:text-gray-400">Twitter</li>
+            <li className="text-gray-800 dark:text-gray-400">LinkedIn</li>
+            <li className="text-gray-800 dark:text-gray-400">GitHub</li>
+          </ul>
+          <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
+            Location
+          </h3>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            United States
+          </p>
+        </aside>
+        <section className="flex-1 px-6 py-4 dark:bg-gray-800">
+          <ul className="flex border-b border-gray-200 dark:border-gray-700">
+            <li className="mr-1">
+              <Link
+                href="#"
+                className="inline-block px-4 py-2 text-sm font-semibold text-green-500 border-b-2 border-green-500"
+              >
+                Work
+              </Link>
+            </li>
+            <li className="mr-1">
+              <Link
+                href="#"
+                className="inline-block px-4 py-2 text-sm font-semibold text-gray-500 hover:text-green-500"
+              >
+                Services
+              </Link>
+            </li>
+            <li className="mr-1">
+              <Link
+                href="#"
+                className="inline-block px-4 py-2 text-sm font-semibold text-gray-500 hover:text-green-500"
+              >
+                Moodboards
+              </Link>
+            </li>
+            <li className="mr-1">
+              <Link
+                href="#"
+                className="inline-block px-4 py-2 text-sm font-semibold text-gray-500 hover:text-green-500"
+              >
+                Collaborations
+              </Link>
+            </li>
+          </ul>
+          <div className="grid grid-cols-3 gap-4 mt-6">
+            <div className="rounded overflow-hidden">
+              <Image
+                alt="Project 1"
+                className="w-full h-full"
+                height="200"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                width="200"
+              />
+            </div>
+            <div className="rounded overflow-hidden">
+              <Image
+                alt="Project 2"
+                className="w-full h-full"
+                height="200"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                width="200"
+              />
+            </div>
+            <div className="rounded overflow-hidden">
+              <Image
+                alt="Project 3"
+                className="w-full h-full"
+                height="200"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                width="200"
+              />
+            </div>
+            <div className="rounded overflow-hidden">
+              <Image
+                alt="Project 4"
+                className="w-full h-full"
+                height="200"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                width="200"
+              />
+            </div>
+            <div className="rounded overflow-hidden">
+              <Image
+                alt="Project 5"
+                className="w-full h-full"
+                height="200"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                width="200"
+              />
+            </div>
+            <div className="rounded overflow-hidden">
+              <Image
+                alt="Project 6"
+                className="w-full h-full"
+                height="200"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                width="200"
+              />
+            </div>
+            <div className="rounded overflow-hidden">
+              <Image
+                alt="Project 7"
+                className="w-full h-full"
+                height="200"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                width="200"
+              />
+            </div>
+            <div className="rounded overflow-hidden">
+              <Image
+                alt="Project 8"
+                className="w-full h-full"
+                height="200"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                width="200"
+              />
+            </div>
+            <div className="rounded overflow-hidden">
+              <Image
+                alt="Project 9"
+                className="w-full h-full"
+                height="200"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                width="200"
+              />
+            </div>
           </div>
-          <div className="rounded overflow-hidden">
-            <Image
-              alt="Project 2"
-              className="w-full h-full"
-              height="200"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              width="200"
-            />
-          </div>
-          <div className="rounded overflow-hidden">
-            <Image
-              alt="Project 3"
-              className="w-full h-full"
-              height="200"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              width="200"
-            />
-          </div>
-          <div className="rounded overflow-hidden">
-            <Image
-              alt="Project 4"
-              className="w-full h-full"
-              height="200"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              width="200"
-            />
-          </div>
-          <div className="rounded overflow-hidden">
-            <Image
-              alt="Project 5"
-              className="w-full h-full"
-              height="200"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              width="200"
-            />
-          </div>
-          <div className="rounded overflow-hidden">
-            <Image
-              alt="Project 6"
-              className="w-full h-full"
-              height="200"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              width="200"
-            />
-          </div>
-          <div className="rounded overflow-hidden">
-            <Image
-              alt="Project 7"
-              className="w-full h-full"
-              height="200"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              width="200"
-            />
-          </div>
-          <div className="rounded overflow-hidden">
-            <Image
-              alt="Project 8"
-              className="w-full h-full"
-              height="200"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              width="200"
-            />
-          </div>
-          <div className="rounded overflow-hidden">
-            <Image
-              alt="Project 9"
-              className="w-full h-full"
-              height="200"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              width="200"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   );
 }
