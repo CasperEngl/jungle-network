@@ -20,6 +20,11 @@ export function PageHeader() {
         <nav className="hidden md:block">
           <ul className="flex items-center space-x-4 text-sm">
             <li>
+              <Link href="/" className="text-white hover:text-gray-300">
+                News
+              </Link>
+            </li>
+            <li>
               <Link href="/jobs" className="text-white hover:text-gray-300">
                 Find jobs
               </Link>
