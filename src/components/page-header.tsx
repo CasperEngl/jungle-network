@@ -9,7 +9,7 @@ export function PageHeader() {
   return (
     <header
       key="1"
-      className="sticky top-0 flex items-center justify-between px-6 h-14 bg-gradient-to-bl from-green-700 to-green-900 dark:from-gray-800 dark:to-gray-900"
+      className="z-10 sticky top-0 flex items-center justify-between px-6 h-14 bg-gradient-to-bl from-green-700 to-green-900 dark:from-gray-800 dark:to-gray-900"
     >
       <div className="flex items-center space-x-4 md:space-x-2">
         <Link href="/">
@@ -34,7 +34,7 @@ export function PageHeader() {
                 href="/portfolio"
                 className="text-white hover:text-gray-300"
               >
-                My jobs
+                Portfolio
               </Link>
             </li>
           </ul>
