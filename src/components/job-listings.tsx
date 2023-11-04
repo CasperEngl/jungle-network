@@ -31,25 +31,25 @@ import {
 
 export function JobListings() {
   return (
-    <section key="1" className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6">
+    <section key="1" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+      <div className="container px-4 md:px-6 mx-auto">
         <div className="grid gap-6 md:gap-8">
-          <div className="flex flex-col md:flex-row items-center md:items-center justify-center bg-white rounded-md shadow-lg divide-y md:divide-x md:divide-y-0 divide-gray-200 h-24">
+          <div className="flex flex-col md:flex-row items-center md:items-center justify-center bg-white rounded-xl shadow-lg h-24 border border-gray-100 overflow-hidden">
             <Input
-              className="border-none shadow-none w-min"
+              className="border-none shadow-none mx-4"
               placeholder="Job title or keyword"
               required
             />
             <div className="hidden md:block border-r border-gray-200 h-full mx-4" />
             <Input
-              className="border-none shadow-none w-min"
+              className="border-none shadow-none mx-4"
               id="location"
               placeholder="City, area or remote"
               required
             />
             <div className="hidden md:block border-r border-gray-200 h-full mx-4" />
             <Select>
-              <SelectTrigger className="border-none shadow-none">
+              <SelectTrigger className="border-none shadow-none mx-4">
                 <SelectValue placeholder="Select a country" />
               </SelectTrigger>
               <SelectContent>
@@ -60,8 +60,7 @@ export function JobListings() {
                 </SelectGroup>
               </SelectContent>
             </Select>
-            <div className="hidden md:block border-r border-gray-200 h-full mx-4" />
-            <Button className="bg-green-600 text-white w-full md:w-auto h-full px-8">
+            <Button className="bg-gradient-to-bl from-green-700 to-green-900 dark:from-gray-800 dark:to-gray-900 text-white w-full md:w-auto h-full px-16 rounded-none">
               Search
             </Button>
           </div>
@@ -129,7 +128,7 @@ export function JobListings() {
             <div className="grid gap-6 md:gap-8">
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
                 <h1 className="text-2xl font-bold tracking-tight">
-                  Job Listings (123)
+                  Job Listings (9)
                 </h1>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
@@ -172,22 +171,29 @@ export function JobListings() {
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
-              <div className="relative group bg-white p-4 rounded-md shadow-sm grid grid-cols-3 gap-4">
-                <Image
-                  alt="Cover image"
-                  className="rounded-lg object-cover w-full aspect-w-16 aspect-h-7 group-hover:opacity-50 transition-opacity"
-                  height={200}
-                  src="/placeholder.svg"
-                  width={500}
-                />
-                <div className="flex-1 py-4">
-                  <h3 className="font-semibold tracking-tight">
-                    Senior Product Designer
-                  </h3>
-                  <p className="text-zinc-500 dark:text-zinc-400">Acme Inc.</p>
-                  <h4 className="font-semibold">$80,000 - $90,000</h4>
+              {Array.from({ length: 9 }).map((_, i) => (
+                <div
+                  className="relative group bg-white p-4 rounded-md grid grid-cols-3 gap-4"
+                  key={i}
+                >
+                  <Image
+                    alt="Cover image"
+                    className="rounded-lg object-cover w-full aspect-w-16 aspect-h-7 group-hover:opacity-50 transition-opacity"
+                    height={200}
+                    src="/placeholder.svg"
+                    width={500}
+                  />
+                  <div className="flex-1 py-4">
+                    <h3 className="font-semibold tracking-tight">
+                      Senior Product Designer
+                    </h3>
+                    <p className="text-zinc-500 dark:text-zinc-400">
+                      Acme Inc.
+                    </p>
+                    <h4 className="font-semibold">$80,000 - $90,000</h4>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
