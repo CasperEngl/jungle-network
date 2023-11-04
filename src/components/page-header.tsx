@@ -30,11 +30,6 @@ export function PageHeader() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-white hover:text-gray-300">
-                Browse brands
-              </Link>
-            </li>
-            <li>
               <Link
                 href="/portfolio"
                 className="text-white hover:text-gray-300"
