@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export function CreatorPortfolioPage() {
   return (
-    <main key="1" className="flex mt-10">
-      <aside className="w-1/4 px-6 py-4 bg-white dark:bg-gray-800">
+    <main key="1" className="flex pt-10 bg-gray-50">
+      <aside className="max-w-[300px] w-full px-6 py-4 dark:bg-gray-800">
         <Image
           alt="User profile"
           className="rounded-full mb-4"
@@ -63,7 +63,7 @@ export function CreatorPortfolioPage() {
           United States
         </p>
       </aside>
-      <section className="w-3/4 px-6 py-4 bg-white dark:bg-gray-800">
+      <section className="flex-1 px-6 py-4 dark:bg-gray-800">
         <ul className="flex border-b border-gray-200 dark:border-gray-700">
           <li className="mr-1">
             <Link
