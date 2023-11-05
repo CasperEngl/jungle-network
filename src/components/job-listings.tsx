@@ -75,16 +75,16 @@ export function JobListings() {
                   <AccordionContent>
                     <div className="grid gap-2">
                       <Label className="flex items-center gap-2 font-normal">
-                        <Checkbox id="role-engineer" />
-                        Engineer
+                        <Checkbox id="role-marketing-manager" />
+                        Marketing Manager
                       </Label>
                       <Label className="flex items-center gap-2 font-normal">
-                        <Checkbox id="role-designer" />
-                        Designer
+                        <Checkbox id="role-content-creator" />
+                        Content Creator
                       </Label>
                       <Label className="flex items-center gap-2 font-normal">
-                        <Checkbox id="role-product-manager" />
-                        Product Manager
+                        <Checkbox id="role-seo-specialist" />
+                        SEO Specialist
                       </Label>
                     </div>
                   </AccordionContent>
@@ -171,10 +171,65 @@ export function JobListings() {
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
-              {Array.from({ length: 9 }).map((_, i) => (
+              {[
+                {
+                  id: 1,
+                  campaignName: "Marketing Campaign Manager",
+                  companyName: "Acme Inc.",
+                  commissionPerAction: "€0.40 - €0.60 per click",
+                },
+                {
+                  id: 2,
+                  campaignName: "Marketing Campaign Specialist",
+                  companyName: "Beta Corp.",
+                  commissionPerAction: "€0.35 - €0.55 per click",
+                },
+                {
+                  id: 3,
+                  campaignName: "Marketing Campaign Coordinator",
+                  companyName: "Gamma Ltd.",
+                  commissionPerAction: "€0.30 - €0.50 per click",
+                },
+                {
+                  id: 4,
+                  campaignName: "Marketing Campaign Analyst",
+                  companyName: "Delta Inc.",
+                  commissionPerAction: "€0.45 - €0.65 per click",
+                },
+                {
+                  id: 5,
+                  campaignName: "Marketing Campaign Director",
+                  companyName: "Epsilon Corp.",
+                  commissionPerAction: "€0.60 - €0.80 per click",
+                },
+                {
+                  id: 6,
+                  campaignName: "Marketing Campaign Assistant",
+                  companyName: "Zeta Ltd.",
+                  commissionPerAction: "€0.25 - €0.45 per click",
+                },
+                {
+                  id: 7,
+                  campaignName: "Marketing Campaign Associate",
+                  companyName: "Eta Inc.",
+                  commissionPerAction: "€0.40 - €0.60 per click",
+                },
+                {
+                  id: 8,
+                  campaignName: "Marketing Campaign Consultant",
+                  companyName: "Theta Corp.",
+                  commissionPerAction: "€0.50 - €0.70 per click",
+                },
+                {
+                  id: 9,
+                  campaignName: "Marketing Campaign Executive",
+                  companyName: "Iota Ltd.",
+                  commissionPerAction: "€0.55 - €0.75 per click",
+                },
+              ].map((job, i) => (
                 <div
                   className="relative group bg-white p-4 rounded-md grid grid-cols-3 gap-4"
-                  key={i}
+                  key={job.id}
                 >
                   <Image
                     alt="Cover image"
@@ -185,12 +240,12 @@ export function JobListings() {
                   />
                   <div className="flex-1 py-4">
                     <h3 className="font-semibold tracking-tight">
-                      Senior Product Designer
+                      {job.campaignName}
                     </h3>
                     <p className="text-zinc-500 dark:text-zinc-400">
-                      Acme Inc.
+                      {job.companyName}
                     </p>
-                    <h4 className="font-semibold">$80,000 - $90,000</h4>
+                    <h4 className="font-semibold">{job.commissionPerAction}</h4>
                   </div>
                 </div>
               ))}

@@ -15,7 +15,7 @@ export function NewsFeed() {
             alt="User profile"
             className="rounded-full mb-2"
             height="100"
-            src="/placeholder.svg"
+            src="/dan-bilzerian.jpg"
             style={{
               aspectRatio: "100/100",
               objectFit: "cover",
@@ -63,7 +63,7 @@ export function NewsFeed() {
                       alt="User profile"
                       className="rounded-full"
                       height="50"
-                      src="/placeholder.svg"
+                      src="/dan-bilzerian.jpg"
                       style={{
                         aspectRatio: "50/50",
                         objectFit: "cover",
@@ -144,7 +144,7 @@ export function NewsFeed() {
               alt="User profile"
               className="rounded-full"
               height="50"
-              src="/placeholder.svg"
+              src="/kim-kardashian.jpeg"
               style={{
                 aspectRatio: "50/50",
                 objectFit: "cover",

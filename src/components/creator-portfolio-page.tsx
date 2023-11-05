@@ -14,7 +14,7 @@ export function CreatorPortfolioPage() {
             alt="User profile"
             className="rounded-full mb-4"
             height="100"
-            src="/placeholder.svg"
+            src="/dan-bilzerian.jpg"
             style={{
               aspectRatio: "100/100",
               objectFit: "cover",
@@ -105,7 +105,7 @@ export function CreatorPortfolioPage() {
                 alt="Project 1"
                 className="w-full h-full"
                 height="200"
-                src="/placeholder.svg"
+                src="/post1.png"
                 style={{
                   aspectRatio: "200/200",
                   objectFit: "cover",
@@ -118,7 +118,7 @@ export function CreatorPortfolioPage() {
                 alt="Project 2"
                 className="w-full h-full"
                 height="200"
-                src="/placeholder.svg"
+                src="/post2.png"
                 style={{
                   aspectRatio: "200/200",
                   objectFit: "cover",
@@ -131,7 +131,7 @@ export function CreatorPortfolioPage() {
                 alt="Project 3"
                 className="w-full h-full"
                 height="200"
-                src="/placeholder.svg"
+                src="/post3.png"
                 style={{
                   aspectRatio: "200/200",
                   objectFit: "cover",
@@ -144,7 +144,7 @@ export function CreatorPortfolioPage() {
                 alt="Project 4"
                 className="w-full h-full"
                 height="200"
-                src="/placeholder.svg"
+                src="/post4.png"
                 style={{
                   aspectRatio: "200/200",
                   objectFit: "cover",
@@ -157,7 +157,7 @@ export function CreatorPortfolioPage() {
                 alt="Project 5"
                 className="w-full h-full"
                 height="200"
-                src="/placeholder.svg"
+                src="/post5.png"
                 style={{
                   aspectRatio: "200/200",
                   objectFit: "cover",
@@ -170,7 +170,7 @@ export function CreatorPortfolioPage() {
                 alt="Project 6"
                 className="w-full h-full"
                 height="200"
-                src="/placeholder.svg"
+                src="/post6.png"
                 style={{
                   aspectRatio: "200/200",
                   objectFit: "cover",
@@ -183,7 +183,7 @@ export function CreatorPortfolioPage() {
                 alt="Project 7"
                 className="w-full h-full"
                 height="200"
-                src="/placeholder.svg"
+                src="/post7.png"
                 style={{
                   aspectRatio: "200/200",
                   objectFit: "cover",
@@ -196,7 +196,7 @@ export function CreatorPortfolioPage() {
                 alt="Project 8"
                 className="w-full h-full"
                 height="200"
-                src="/placeholder.svg"
+                src="/post8.png"
                 style={{
                   aspectRatio: "200/200",
                   objectFit: "cover",
@@ -209,7 +209,7 @@ export function CreatorPortfolioPage() {
                 alt="Project 9"
                 className="w-full h-full"
                 height="200"
-                src="/placeholder.svg"
+                src="/post9.png"
                 style={{
                   aspectRatio: "200/200",
                   objectFit: "cover",
