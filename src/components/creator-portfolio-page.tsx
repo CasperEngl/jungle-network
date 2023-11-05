@@ -40,13 +40,13 @@ export function CreatorPortfolioPage() {
           </h3>
           <ul className="mt-2 flex flex-wrap gap-2">
             <li className="px-2 py-1 text-xs text-green-800 bg-green-200 rounded">
-              UI/UX Design
+              Content Marketing
             </li>
             <li className="px-2 py-1 text-xs text-green-800 bg-green-200 rounded">
-              Graphic Design
+              Social Media Marketing
             </li>
             <li className="px-2 py-1 text-xs text-green-800 bg-green-200 rounded">
-              Web Development
+              SEO/SEM
             </li>
           </ul>
           <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
